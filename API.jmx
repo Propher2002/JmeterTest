@@ -10,6 +10,18 @@
       </elementProp>
     </TestPlan>
     <hashTree>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Bearer CSV" enabled="false">
+        <stringProp name="delimiter">\t</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">https://github.com/Propher2002/LoadTest.git/Auth.csv</stringProp>
+        <boolProp name="ignoreFirstLine">false</boolProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">token</stringProp>
+      </CSVDataSet>
+      <hashTree/>
       <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="" elementType="Header">
@@ -18,7 +30,7 @@
           </elementProp>
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
-            <stringProp name="Header.value">Bearer NDtLUFA7S1BQO2dpbml5YXR1bGxpbi5heWRhciwyY2RhMWIyOC1jMjk1LTQxYjItYTQ4ZC0yZGVhOTUyYWI4MmM7Mzc1ZWJkNTctZmIyMS00YzQwLTk1NzUtZWEyYjk4MDllNGUxOzEyNy4wLjAuMTsxMC4xMTYuMTMwLjIzMTsxNzAyNDY2MDE2ODEyOzE3MDI3NjYwNDY4MTI7ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklqRWlmUS5leUp1WVcxbElqb2kwSlBRdU5DOTBMalJqOUdDMFlQUXU5QzcwTGpRdlNEUWtOQzUwTFRRc05HQUlOQ2swTERSZ05DNDBMVFF2dEN5MExqUmh5SXNJbVpoYldsc2VWOXVZVzFsSWpvaTBKUFF1TkM5MExqUmo5R0MwWVBRdTlDNzBMalF2U0lzSW1kcGRtVnVYMjVoYldVaU9pTFFrTkM1MExUUXNOR0FJaXdpYldsa1pHeGxYMjVoYldVaU9pTFFwTkN3MFlEUXVOQzAwTDdRc3RDNDBZY2lMQ0p3Y21WbVpYSnlaV1JmZFhObGNtNWhiV1VpT2lKbmFXNXBlV0YwZFd4c2FXNHVZWGxrWVhJaUxDSnNiMk5oYkdVaU9pSnlkU0lzSW5Wd1pHRjBaV1JmWVhRaU9qRTNNREkwTmpZd01UVXNJbk4xWWlJNklqZ3pNemhrT0RSbExUUTNaall0TkdReFpTMWhPVGs0TFRRd1pUSmxaalV3WkRZek1TSXNJbWx6Y3lJNkltaDBkSEJ6T2k4dmMzTnZMbWx1ZEM1d2JHRjBabTl5YlM1MFlYUmhjaTV5ZFNJc0ltRjFaQ0k2SW1FMU9HRmtaRFkzTFRNNE5tWXROR1l5WVMxaE16QXlMV0k0WXpCaU5qUXlNelptT1NJc0luTnBaQ0k2SW1aaU1tUmlaR1prTFRCbE5URXRORGxpWVMwNU16bGlMVEEzWWpCallqQmxZbVl3T0NJc0ltVnRZV2xzSWpvaVoybHVhWGxoZEhWc2JHbHVMbUY1WkdGeVFIUmhkR0Z5TG5KMUlpd2laVzFoYVd4ZmRtVnlhV1pwWldRaU9tWmhiSE5sTENKd1pYSnRhWE56YVc5dWN5STZXM3NpY21WemIzVnlZMlZmYVdRaU9pSm5jbTkxY0hNaUxDSnlaWE52ZFhKalpWOXpZMjl3WlhNaU9sc2ljbVZ0YjNabFgzVnpaWElpTENKMWNHUmhkR1VpTENKaFpHUmZkWE5sY2lJc0ltRmtaRjloY0hBaUxDSmtaV3hsZEdVaUxDSnlaVzF2ZG1WZllYQndJaXdpY21WaFpDSXNJbU55WldGMFpTSmRmU3g3SW5KbGMyOTFjbU5sWDJsa0lqb2lZWEJ3Y3lJc0luSmxjMjkxY21ObFgzTmpiM0JsY3lJNld5SjFjR1JoZEdVaUxDSmtaV3hsZEdVaUxDSnlaV0ZrSWl3aVkzSmxZWFJsSWl3aWJXRnVZV2RsWDJGMWRHaGZjSEp2WTJWemN5SmRmU3g3SW5KbGMyOTFjbU5sWDJsa0lqb2lZV1J0YVc1cGMzUnlZWFJ2Y2w5eWIyeGxjeUlzSW5KbGMyOTFjbU5sWDNOamIzQmxjeUk2V3lKemRYQmxjblpwYzI5eUlsMTlMSHNpY21WemIzVnlZMlZmYVdRaU9pSmpjbVZrWlc1MGFXRnNjeUlzSW5KbGMyOTFjbU5sWDNOamIzQmxjeUk2V3lKMWNHUmhkR1VpTENKeVpXRmtJaXdpWkdWc1pYUmxJaXdpWTNKbFlYUmxJbDE5TEhzaWNtVnpiM1Z5WTJWZmFXUWlPaUp3Y0dkdGRWOXliMnhsY3lJc0luSmxjMjkxY21ObFgzTmpiM0JsY3lJNld5SnpkWEJsY2tGa2JXbHVJbDE5TEhzaWNtVnpiM1Z5WTJWZmFXUWlPaUpwYldGblpYTWlMQ0p5WlhOdmRYSmpaVjl6WTI5d1pYTWlPbHNpYkc5aFpGOXBiV0ZuWlNKZGZTeDdJbkpsYzI5MWNtTmxYMmxrSWpvaWIyRjFkR2hmYzJOdmNHVnpJaXdpY21WemIzVnlZMlZmYzJOdmNHVnpJanBiSW1OeVpXRjBaU0lzSW5KbFlXUWlMQ0oxY0dSaGRHVWlMQ0prWld4bGRHVWlYWDBzZXlKeVpYTnZkWEpqWlY5cFpDSTZJbk5sWTNWeWFYUjViRzluSWl3aWNtVnpiM1Z5WTJWZmMyTnZjR1Z6SWpwYkltUmxiR1YwWlNJc0luSmxZV1FpWFgwc2V5SnlaWE52ZFhKalpWOXBaQ0k2SW5WelpYSnpJaXdpY21WemIzVnlZMlZmYzJOdmNHVnpJanBiSW1SbGJHVjBaU0lzSW5WdWJHOWphMTkxYzJWeUlpd2lZM0psWVhSbElpd2ljMlYwWDNWelpYSmZjR0Z6YzNkdmNtUWlMQ0p5WldGa0lpd2ljbVZ6WlhSZmRYTmxjbDl3WVhOemQyOXlaQ0lzSW5Wd1pHRjBaU0lzSW14dlkydGZkWE5sY2lKZGZTeDdJbkpsYzI5MWNtTmxYMmxrSWpvaWRHOXJaVzV6SWl3aWNtVnpiM1Z5WTJWZmMyTnZjR1Z6SWpwYkltUmxiR1YwWlNJc0luSmxiVzkyWlY5aGNIQWlMQ0p5WldGa0lpd2lZM0psWVhSbElpd2lkWEJrWVhSbElpd2lZV1JrWDJGd2NDSmRmU3g3SW5KbGMyOTFjbU5sWDJsa0lqb2ljMlZ6YzJsdmJuTWlMQ0p5WlhOdmRYSmpaVjl6WTI5d1pYTWlPbHNpY21WaFpDSXNJbVJsYkdWMFpTSmRmU3g3SW5KbGMyOTFjbU5sWDJsa0lqb2ljbTlzWlhNaUxDSnlaWE52ZFhKalpWOXpZMjl3WlhNaU9sc2lkWEJrWVhSbElpd2lUMWRPUlZJaUxDSnlaV0ZrSWl3aWNtVnRiM1psWDNWelpYSWlMQ0pqY21WaGRHVWlMQ0pCUkUxSlRpSXNJbE5GVWxaSlEwVWlMQ0poWkdSZmRYTmxjaUlzSWs5UVJWSkJWRTlTSWl3aVpHVnNaWFJsSWwxOUxIc2ljbVZ6YjNWeVkyVmZhV1FpT2lKd2NtOW1hV3hsSWl3aWNtVnpiM1Z5WTJWZmMyTnZjR1Z6SWpwYkluVndaR0YwWlNJc0luSmxZV1FpTENKa1pXeGxkR1VpWFgwc2V5SnlaWE52ZFhKalpWOXBaQ0k2SW5ObGNuWnBZMlZmWlhobFkzVjBiM0lpTENKeVpYTnZkWEpqWlY5elkyOXdaWE1pT2xzaUxURXdNREF3TURBd01qRTFJaXdpTFRFd01EQXdNREF3TWpNMUlsMTlYU3dpWTJ4cFpXNTBYMmxrSWpvaVlUVTRZV1JrTmpjdE16ZzJaaTAwWmpKaExXRXpNREl0WWpoak1HSTJOREl6Tm1ZNUlpd2laWGh3SWpveE56QXlOVFV5TkRFMkxDSnBZWFFpT2pFM01ESTBOall3TVRZc0ltcDBhU0k2SWpkbFltTmxPRFk0TFdGak1tSXROR1poTkMwNE5tSTBMVEl5TmpsaVlUQXdaRGs1WlNJc0luTmpiM0JsSWpvaWIzQmxibWxrSUhCeWIyWnBiR1VnY0dWeWJXbHpjMmx2Ym5NZ1pXMWhhV3dpTENKbGVIQnBjbVZ6WDJsdUlqbzROalF3TUgwLmhtS0M5SURVMGx6cmp0SlhYR3BJWXlFa1g4cENxUDNaYzkxc2lfUnRNMHpKcGMyV1AzM2w0bkY3QXJvbUNhWkQzM29pU2cwSE55aTJFNmU1SFFldHU0OGtXVWcxaVF1LUFsYVAwY1JwU3lYcEg2SUNQYW5VTHVzVmY0d3NkLVQ0aFhxdENXUGZUV2F4dE9tdVZxT1ZmeGxtY2lvdGxRaTJFM2h1Zk1NWXRQdERSbUtVM2tsN2VwWklzdE5CVVZvTzA0N0ZTZnVEYWZqOXRpbXo5enV6OTNFR3FIZ3pFaTdDaXgzblVWOU94TWZ2NkowVk9PTWlNTVIwcUtUR3o5c1ZVdVdYYjFMdWpsOVpNTndrZmlJMjIxaU9XcHRISjhyV0tZT0xCVFZ4VGdEdXJPaHJfUXotbTVObmlFTC03TTIxVzJIbUJkbFpQYUtaRDBiNkZmVmVVQTs2NmMzYzVkNGUzZDBkMGY5M2FiZTYwYzQ5ZTQ4OTVlYjA3MDFhNmFiOTM4N2FiYjYxYWIxMzcwNGZiMTQ1MGE3</stringProp>
+            <stringProp name="Header.value">${__P(token)}</stringProp>
           </elementProp>
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Content-Type</stringProp>
@@ -37,16 +49,20 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
+      <com.tag.jmeter.ext.config.PropertyReader guiclass="TestBeanGUI" testclass="com.tag.jmeter.ext.config.PropertyReader" testname="Property File Reader" enabled="true">
+        <stringProp name="propFilePath">The.properties</stringProp>
+      </com.tag.jmeter.ext.config.PropertyReader>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <intProp name="LoopController.loops">-1</intProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(Threads)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(rampUp)}</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">600</stringProp>
+        <stringProp name="ThreadGroup.duration">${__P(sDuration)}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
@@ -149,7 +165,7 @@
         <hashTree/>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
@@ -185,7 +201,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <kg.apc.jmeter.listener.GraphsGeneratorListener guiclass="TestBeanGUI" testclass="kg.apc.jmeter.listener.GraphsGeneratorListener" testname="jp@gc - Graphs Generator" enabled="true">
+      <kg.apc.jmeter.listener.GraphsGeneratorListener guiclass="TestBeanGUI" testclass="kg.apc.jmeter.listener.GraphsGeneratorListener" testname="jp@gc - Graphs Generator" enabled="false">
         <boolProp name="aggregateRows">false</boolProp>
         <boolProp name="autoScaleRows">false</boolProp>
         <stringProp name="endOffset"></stringProp>
@@ -283,7 +299,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\1\Downloads\Jmetergraphs\AggregateGraph.jtl</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
